@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+        title= 'Weather report'
+    body
+        h3
+            |Current weather in
+            = ' ' + cityCountry
+        p
+            |Updated
+            = ' ' + date + ' at ' + time
+        img(src='icons/' + weatherIcon)
+        p
+            = weatherDesc
+        p
+            = temp
+        p
+            |Wind:
+            = ' ' + wind
+        p 
+            |Humidity: 
+            = ' ' + humidity + '%'
+        p
+            |Pressure:
+            = ' ' + pressure + ' mb'
+        p
+            |Sunrise:
+            = ' ' + sunrise
+        p
+            |Sunset:
+            = ' ' + sunset
+        form(action='/weather_units_toggle' method='get')
+            h5
+                |Display 
+                input(type='submit' name='units_toggle' value=units_toggle_value)
+        form(action='/weather' method='get')
+            h5
+                |Show me  
+                input(type='submit' name='location' value=change_location_value)

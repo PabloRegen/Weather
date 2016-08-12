@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= 'Weather location'
+    body
+        h1 My Weather
+        form(action='/weather' method='get')
+            p
+                |City: 
+                input(type='radio' name='location' value='Montevideo' checked)
+                |Montevideo
+                input(type='radio' name='location' value='NYC')
+                |NYC
+            p
+                |Unit: 
+                input(type='radio' name='units' value='Celsius' checked)
+                |Celsius
+                input(type='radio' name='units' value='Fahrenheit')
+                |Fahrenheit
+            p
+                input(type='submit' value='go')
