@@ -2,20 +2,21 @@ doctype html
 html
     head
         title= 'Weather location'
+        link(href='index.css' type='text/css' rel='stylesheet')
     body
-        h1 My Weather
-        form(action='/weather' method='get')
-            p
-                |City: 
+        h1#title My Weather
+        form#form(action='/weather' method='get')
+            p#city
+                |#[strong Select city:] </br>
                 input(type='radio' name='location' value='Montevideo' checked)
-                |Montevideo
+                |Montevideo </br>
                 input(type='radio' name='location' value='NYC')
                 |NYC
-            p
-                |Unit: 
+            p#units
+                |#[strong Select units:] </br>
                 input(type='radio' name='units' value='Celsius' checked)
-                |Celsius
+                |Celsius </br>
                 input(type='radio' name='units' value='Fahrenheit')
                 |Fahrenheit
-            p
+            p#submit
                 input(type='submit' value='go')

@@ -25,6 +25,7 @@ var renderThisObj = function(vars, change_location_value) {
 // app.set('views', __dirname + '/views'); // needed?
 app.set('view engine', 'pug');
 app.use('/icons', express.static('./icons'));
+app.use(express.static('styles'));
 
 app.get('/', function(req, res) {
     res.render('index');
