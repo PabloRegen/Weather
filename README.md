@@ -6,12 +6,13 @@ Coded as a back-end app in order to practice databases, Node, Express and templa
 
 ## Technologies
 * JavaScript
+* HTML5
+* CSS3
+* SQL
 * Node
 * Express
-* HTML
-* Pug (ex Jade)
-* SQL
 * SQLite3
+* Pug (ex Jade)
 
 ## Dependencies
 * express
