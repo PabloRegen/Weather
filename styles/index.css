@@ -4,6 +4,16 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.indexreport {
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.orangeText {
+  color: orangered;
+}
+
 #title {
   width: 200px;
   height: 40px;
@@ -50,4 +60,8 @@ body {
 
 #units:hover {
   color: #5bd;
+}
+
+#submit input {
+  margin-left: 105px;
 }
