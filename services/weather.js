@@ -1,6 +1,7 @@
+const path = require('path');
 var sqlite3 = require('sqlite3').verbose();
 // Create and automatically open the db. There is no separate method to open the db
-var db = new sqlite3.Database('database/weather.db');
+var db = new sqlite3.Database(path.join(__dirname, '../database/weather.db'));
 var dataCleaner = require('./cleaners/data_cleaner');
 
 var createTable = `
