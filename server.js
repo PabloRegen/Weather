@@ -22,10 +22,10 @@ var renderThisObj = function(vars, change_location_value) {
     };
 };
 
-// app.set('views', __dirname + '/views'); // needed?
+app.set('views', path.join(__dirname, 'views');
 app.set('view engine', 'pug');
-app.use('/icons', express.static('./icons'));
-app.use(express.static('styles'));
+app.use('/icons', express.static(path.join(__dirname, 'icons')));
+app.use(express.static(path.join(__dirname, 'styles')));
 
 app.get('/', function(req, res) {
     res.render('index');
